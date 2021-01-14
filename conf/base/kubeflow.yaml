@@ -1,0 +1,16 @@
+
+
+host: https://ml-platform.endpoints.gid-ml-ops-sandbox.cloud.goog/pipelines
+
+run_config:
+  image: gcr.io/gid-ml-ops-sandbox/kedro-kubeflow-demo:__GITHUB_SHA__
+  image_pull_policy: IfNotPresent
+  experiment_name: demo
+  run_name: demo
+  wait_for_completion: False
+  volume:
+    storageclass: # default
+    #size: 1Gi
+    access_modes: [ReadWriteOnce]
+    #skip_init: False
+    owner: 0
