@@ -6,7 +6,7 @@ run_config:
   image: gcr.io/__PROJECT_ID__/demo:__GITHUB_SHA__
   image_pull_policy: IfNotPresent
   experiment_name: demo
-  run_name: demo
+  run_name: demo:__GITHUB_SHA__
   wait_for_completion: False
   volume:
     storageclass: # default

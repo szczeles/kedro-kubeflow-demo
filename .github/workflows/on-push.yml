@@ -41,7 +41,7 @@ jobs:
 
     - name: Deploy pipeline
       run: |-
-        pip3 install kedro-kubeflow
+        pip3 install git+https://github.com/getindata/kedro-kubeflow.git@github_actions
         /home/runner/.local/bin/kedro install
         sed -i -e"s/__GITHUB_SHA__/$GITHUB_SHA/" conf/base/kubeflow.yaml
         sed -i -e"s/__PROJECT_ID__/$PROJECT_ID/" conf/base/kubeflow.yaml
