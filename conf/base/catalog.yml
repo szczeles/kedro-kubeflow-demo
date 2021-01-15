@@ -76,3 +76,23 @@ regressor:
   filepath: data/06_models/regressor.pickle
   versioned: true
   layer: models
+
+X_train:
+  type: pickle.PickleDataSet
+  filepath: data/05_model_input/X_train.pickle
+  layer: model_input
+
+y_train:
+  type: pickle.PickleDataSet
+  filepath: data/05_model_input/y_train.pickle
+  layer: model_input
+
+X_test:
+  type: pickle.PickleDataSet
+  filepath: data/05_model_input/X_test.pickle
+  layer: model_input
+
+y_test:
+  type: pickle.PickleDataSet
+  filepath: data/05_model_input/y_test.pickle
+  layer: model_input
