@@ -48,6 +48,6 @@ run_config:
   resources:
     __default__:
       cpu: 100m
-      memory: 64Mi
+      memory: 256Mi
     creating_master_table:
       cpu: 500m
