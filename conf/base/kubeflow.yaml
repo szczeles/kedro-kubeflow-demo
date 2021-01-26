@@ -51,4 +51,4 @@ run_config:
       memory: 512Mi
     creating_master_table:
       cpu: 500m
-      memory: 4Gi
+      memory: 2Gi
