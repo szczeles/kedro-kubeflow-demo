@@ -21,6 +21,8 @@ run_config:
   # Flag indicating if the run-once should wait for the pipeline to finish
   wait_for_completion: False
 
+  description: My demo pipeline
+
   # Optional volume specification
   volume:
 
