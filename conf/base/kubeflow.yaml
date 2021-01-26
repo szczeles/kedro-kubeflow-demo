@@ -44,3 +44,10 @@ run_config:
     # Allows to specify user executing pipelines within containers
     # Default: root user (to avoid issues with volumes in GKE)
     owner: 0
+
+  resources:
+    __default__:
+      cpu: 100m
+      memory: 64Mi
+    creating_master_table:
+      cpu: 500m
