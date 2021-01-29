@@ -22,6 +22,7 @@ run_config:
   wait_for_completion: False
 
   description: My demo pipeline
+  ttl: 300
 
   # Optional volume specification
   volume:
